@@ -1,0 +1,199 @@
+﻿{
+	"functions": [
+		{
+			"id": "VERSIONSYNC",
+			"name": "VERSION_SYNC",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": true
+			}
+		},
+
+		{
+			"id": "VERSIONASYNC",
+			"name": "VERSION_ASYNC",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "VERSIONDELAYED",
+			"name": "VERSION_DELAYED",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "ms",
+					"type": "number",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "CONSTSYNC",
+			"name": "CONST_SYNC",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": true
+			}
+		},
+
+		{
+			"id": "CONSTASYNC",
+			"name": "CONST_ASYNC",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "CONSTDELAYED",
+			"name": "CONST_DELAYED",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "ms",
+					"type": "number",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "STREAMSEQUENCE",
+			"name": "STREAM_SEQUENCE",
+			"result": {
+				"type": "any",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "init",
+					"type": "number",
+					"dimensionality": "scalar"
+				},
+				{
+					"name": "step",
+					"type": "number",
+					"dimensionality": "scalar"
+				},
+				{
+					"name": "count",
+					"type": "number",
+					"dimensionality": "scalar"
+				},
+				{
+					"name": "ms",
+					"type": "number",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false,
+				"stream": true
+			}
+		},
+
+		{
+			"id": "GETSHAREDVALUE",
+			"name": "GETSHAREDVALUE",
+			"result": {
+				"type": "any",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "SETSHAREDVALUE",
+			"name": "SETSHAREDVALUE",
+			"result": {
+				"type": "any",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "value",
+					"type": "any",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false
+			}
+		},
+        
+		{
+			"id": "GETRUNTIMESTATE",
+			"name": "GETRUNTIMESTATE",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+			],
+			"options": {
+				"sync": false
+			}
+		},
+
+		{
+			"id": "SETRUNTIMESTATE",
+			"name": "SETRUNTIMESTATE",
+			"result": {
+				"type": "string",
+				"dimensionality": "scalar"
+			},
+			"parameters": [
+				{
+					"name": "value",
+					"type": "string",
+					"dimensionality": "scalar"
+				}
+			],
+			"options": {
+				"sync": false
+			}
+		}
+
+	]
+}
